@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "USD to BDT Converter",
+    "version": "1.0",
+    "description": "Convert USD to BDT",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "assets/img/dit-logo1.png",
+        "48": "assets/img/dit-logo1.png",
+        "128": "assets/img/dit-logo1.png"
+      }
+    },
+    "icons": {
+      "16": "assets/img/dit-logo1.png",
+      "48": "assets/img/dit-logo1.png",
+      "128": "assets/img/dit-logo1.png"
+    }
+  }
+  
