@@ -26,9 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
           fetch("https://api.apilayer.com/currency_data/convert?to="+toCuntry+"&from="+fromCuntry+"&amount="+curancy, requestOptions)
             .then(response => response.json())
             .then(result => {
-              const resultAmount = Number(result.result);
-              const res =resultAmount.toFixed(2);
-              resultDisplay.textContent = `${usdAmount} USD is approximately ${res} BDT`;
+              if(window.onload){
+                resultDisplay.textContent = `Loading...`;
+              }else{
+                const resultAmount = Number(result.result);
+                const res =resultAmount.toFixed(2);
+                resultDisplay.textContent = `${usdAmount} USD is approximately ${res} BDT`;
+              }
             })
             .catch(error => console.log('error', error));
 
