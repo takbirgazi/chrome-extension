@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>USD to BDT Converter</title>
+  <title>Realtime Curancy Converter</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="header">USD to BDT Converter</h1>
+        <h1 class="header">Realtime Curancy Converter</h1>
+        <div class="input-container">
+          <div class="curncy_name">
+            <option hidden="hidden" id="from_curnc_hid_opt"></option>
+            <select name="" id="from_curncy" >
+              <option value="USD">USD</option>
+              <option value="BDT">BDT</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+          <div>TO</div>
+          <div class="curncy_name">
+            <option hidden="hidden" id="to_curnc_hid_opt"></option>
+            <select name="" id="to_curncy">
+              <option value="BDT">BDT</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+         
+        </div>
         <div class="input-container">
           <input class="input-field" type="number" id="usdAmount" placeholder="Enter USD amount">
           <button class="convert-button" id="convertButton">Convert</button>
         </div>
         <p class="result" id="result"></p>
+        <ul id="ul"></ul>
     </div>
   <script src="assets/js/script.js"></script>
 </body>

@@ -16,7 +16,26 @@
     margin-bottom: 20px;
     color: #333;
   }
-  
+  .curncy_name {
+    color: #0078d4;
+    outline: none;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    background: white;
+}
+.curncy_name select {
+  border: none;
+  outline: none;
+  background: white;
+}
+.curncy_name select > option {
+  border: none;
+  outline: none;
+  margin-top: 13px;
+  padding: 2px 5px;
+}
   /* Style the input container */
   .input-container {
     display: flex;
@@ -28,7 +47,7 @@
   /* Style the input field */
   .input-field {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #0078d4;
     border-radius: 5px;
     outline: none;
     font-size: 16px;
